@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Quer iniciar o desenvolvimento de apps Híbridos e não sabe por onde começar? Vou ensinar neste tutorial como configurar o ambiente completo para que você possa dar os primeiros passos. Instalação ...">
+        <meta name="keywords" content="Configuração, Cordova, Ionic, Mobile, Windows">
+        <link rel="icon" href="/favicon.ico">
+
+        <title>Generator-m-ionic Configuração Do Ambiente no Windows - Wallace Coelho</title>
+
+        <!-- Stylesheets -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/fonts.css" rel="stylesheet">
+        <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/theme/css/nest.css" rel="stylesheet">
+        <link href="/theme/css/pygment.css" rel="stylesheet">
+        <link href="/theme/css/style.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container gradient">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="/">
+                            <!--<img class="mr20" src="/image/logo.png" alt="logo"/>-->
+                            Wallace Coelho
+                        </a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="/">Homepage</a>
+                                <a href="/categories.html">Categories</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Generator-m-ionic Configuração Do Ambiente no Windows</h1>
+                      <p class="header-date">Por <a href="/author/wallace-coelho.html">Wallace Coelho</a>, sex 09 dezembro 2016, na categoria <a href="/category/desenvolvimento.html">Desenvolvimento</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="/tag/configuracao.html">Configuração</a>, <a href="/tag/cordova.html">Cordova</a>, <a href="/tag/ionic.html">Ionic</a>, <a href="/tag/mobile.html">Mobile</a>, <a href="/tag/windows.html">Windows</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <p>Quer iniciar o desenvolvimento de apps Híbridos e não sabe por onde começar? Vou ensinar neste tutorial como configurar o ambiente completo 
+para que você possa dar os primeiros passos.</p>
+<h4>Instalação do Node JS</h4>
+<p>Primeiramente, instale o Node JS em <a href="https://nodejs.org/">nodejs.org</a>, baixe a versão LTS (atualmente v6.9.2)</p>
+<p>Instale a última versão do <a href="https://rubyinstaller.org/">RubyInstaller</a>, atualmente a versão LTS é a 2.2.6
+Marque a opção "Add Ruby Executables to your PATH"</p>
+<h4>Instalação do Ruby (Para usar os recursos do SASS)</h4>
+<p><img alt="Instalador do Ruby" src="/images/ambiente-generator-m-ionic/01.png" /></p>
+<p>Finalize a instalação do Ruby</p>
+<h4>Instalação dos Módulos do Node</h4>
+<p>Abra o prompt de comando em qualquer lugar e rode</p>
+<p><code>npm install -g cordova bower ionic gulp yo generator-m-ionic</code></p>
+<p>Este comando instalará globalmente (para todo o sistema) as Dependências</p>
+<ul>
+<li><strong>Cordova</strong>: Plataforma para apps Híbridos</li>
+<li><strong>Bower</strong>: Gerenciador de Dependências do Frontend</li>
+<li><strong>Ionic</strong>: Framework Mobile</li>
+<li><strong>Gulp</strong>: Automatização de Processos</li>
+<li><strong>Yoman</strong>: Ferramenta para download de Scaffolds</li>
+<li><strong>Generator-m-Ionic</strong>: Scaffold para Ionic</li>
+</ul>
+<h2>Configurando o Android</h2>
+<h4>Instalando o Android SDK</h4>
+<p>Vá na página de <a href="https://developer.android.com/studio/index.html?hl=pt-br#downloads">download do Android</a> e na seção <strong>Obtenha apenas as ferramentas de linha de comando</strong> baixe as ferramentas do Windows.
+Ao término do Download abra o Zip e extraia o conteúdo da pasta tools para C:\android (ou qualquer outro diretório que preferir).</p>
+<p><img alt="Pasta do Windows" src="/images/ambiente-generator-m-ionic/02.png" /></p>
+<p>Precisamos adicionar este diretório no PATH do Windows. Clique com o botão direito em <strong>Meu Computador</strong>, vá em propriedades, Configurações Avançadas do Sistema e e clique em variáveis de Ambiente.</p>
+<p><img alt="Sistema" src="/images/ambiente-generator-m-ionic/03.png" /></p>
+<p><img alt="Configurações Avançadas" src="/images/ambiente-generator-m-ionic/04.png" /></p>
+<p>Clique em Novo (Em variáveis de Ambiente) e crie a variável ANDROID_HOME com o caminho que colocamos o android (C:\android)</p>
+<p><img alt="Variável ANDROID_HOME" src="/images/ambiente-generator-m-ionic/05.png" /></p>
+<p>Selecione agora a variável PATH e clique em editar. Nela colocaremos 
+<code>;%ANDROID_HOME%\tools</code></p>
+<p><strong>IMPORTANTE:</strong> Não adicione espaços e use ponto e vírgula (;) para separar.</p>
+<p><img alt="Adicionando ao PATH" src="/images/ambiente-generator-m-ionic/06.png" /></p>
+<p>Clique em ok para fechar tudo</p>
+<h4>Instalando o Java JDK</h4>
+<p>Baixe o JDK no <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html?ssSourceSiteId=otnpt">site oficial</a>. Clique em Accept e baixe de acordo com sua arquitetura (x32/x86 ou x64)</p>
+<p><img alt="Site da Oracle" src="/images/ambiente-generator-m-ionic/07.png" /></p>
+<p>Instale o Java normalmente e, ao término, adicione uma nova variável de ambiente. </p>
+<p>Nome = JAVA_HOME
+Valor = C:\Program Files\Java\<strong>jdk1.8.0_111</strong></p>
+<p><em>Obs: verifique qual o nome da sua pasta, pois a versão pode ser diferente de <strong>jdk1.8.0_111</strong>.</em></p>
+<p>Adicione ao PATH: <strong>;%JAVA_HOME%\bin</strong></p>
+<p><em>Obs 2: Olhe na sessão Instalando o Android SDK para saber como adicionar uma variável de Ambiente.</em></p>
+<h4>Instalando as Plataformas do Android</h4>
+<p>Abra o prompt e digite <code>android</code> deverá abrir um gerenciador.</p>
+<ul>
+<li>Em tools, selecione todas. </li>
+<li>Escolha uma plataforma - Irei instalar todos os componentes da versão 6.0 (API23)</li>
+<li>Em Extras, selecione Google USB Driver</li>
+</ul>
+<p>Clique em install e aguarde (Este processo pode demorar um pouco).</p>
+<p><img alt="Gerenciador do Android" src="/images/ambiente-generator-m-ionic/08.png" /></p>
+<p>Quando tudo tiver baixado, feche o gerenciador.</p>
+<h4>Iniciando nosso projeto</h4>
+<p>Crie uma nova pasta, abra o prompt na pasta criada e rode o comando:</p>
+<p><code>yo m-ionic</code></p>
+<p>Este comando irá gerar uma série de perguntas para dar o <em>'start'</em> em nosso projeto.
+Para uma descrição completa de cada pergunta, aconselho a olhar na <a href="https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/guides/questions.md">documentação oficial</a>.</p>
+<p><em>Obs: Aconselho a instalar com o SASS (se você já instalou o Ruby), localforage, Device e SplashScreen no mínimo.</em></p>
+<p>Com isso já temos um ambiente pronto para desenvolver aplicativos e rodar no Android.</p>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Sitemap</div>
+                        <ul class="list-unstyled">
+                            <li><a href="/archives.html">Archives</a></li>
+                            <li><a href="/tags.html">Tags</a></li>
+                            <li><a href="/authors.html">Authors</a></li>
+                        </ul>
+                    </div>
+                    <div class="social col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Social</div>
+                            <a href="https://www.facebook.com/wac2007" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+                            <a href="https://twitter.com/wac2007" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Links</div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://getpelican.com/" target="_blank">Pelican</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a></li>
+                            <li><a href="#" target="_blank">You can modify those links in your config file</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small>&copy; Wallace Coelho 2016</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>
